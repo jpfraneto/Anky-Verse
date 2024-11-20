@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "Anky Verse",
+    "slug": "anky",
+    "version": "0.5.1",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "ankyverse",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "bot.anky.app",
+      "buildNumber": "0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "bot.anky.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": false
+        }
+      ],
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#ffffff",
+          "sounds": [
+            "./assets/sounds/bell.mp3"
+          ]
+        }
+      ],
+      "expo-localization",
+      "expo-asset",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "92dc277a-cd8a-4c9b-851f-9110b2e0219d"
+      }
+    }
+  }
+}
